@@ -15,13 +15,14 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: #2f2e2b;
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
 h1 {
   font-size: 96px;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -35,7 +36,7 @@ h4 {
 
 p {
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 30px;
 }
 
@@ -69,8 +70,13 @@ nav a:hover, nav li.active a {
   color: var(--branding-color);
 }
 
+.fa-arrow-right {
+  color: var(--branding-color);
+}
+
 footer {
   margin: 60px 0;
+  color: #2f2e2b;
 }
 
 footer .contact-box {
@@ -100,8 +106,8 @@ footer .social-links {
 
 footer .social-links a {
   margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
+  color: #2f2e2b;
+  background: #b6cdbd;
   padding: 10px 14px;
   width: 18px;
   border-radius: 50%;
@@ -142,6 +148,11 @@ footer .social-links a:hover {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color:#b6cdbd;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn-branding-outline {
@@ -187,6 +198,38 @@ footer .social-links a:hover {
   padding: 60px 20px;
 }
 
+.card {
+  overflow: hidden;
+}
+
+.row g-0 >.col-md-6 {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.small-img {
+    width: 50px; 
+}
+
+.card btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #b6cdbd;
+    text-decoration: none;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -202,7 +245,8 @@ footer .social-links a:hover {
   }
 
   .btn {
-    font-size: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
   }
 
   .hero {
@@ -218,4 +262,33 @@ footer .social-links a:hover {
     text-align: center;
     padding: 0;
   }
+
+  .card img {
+    display: block;
+  }
+}
+
+.card-thumbnail {
+    border-radius: 0 24px 24px 0;
+}
+
+.card-thumbnail-primary {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid {
+    display: grid;
+    grid-gap: 64px;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
 }
