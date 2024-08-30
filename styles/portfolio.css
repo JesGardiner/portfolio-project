@@ -41,7 +41,7 @@ p {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 125px;
 }
 
 nav {
@@ -118,6 +118,10 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+.author a {
+  color: var(--branding-color);
 }
 
 .hero {
